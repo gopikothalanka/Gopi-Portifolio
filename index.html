@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   </head>
 <body>
-  <h1>Gopi's - Component library</h1>
+  <h1 class="brand-name">Gopi's - Component library</h1>
   <p>This is <strong>Gopi</strong> Web Developer trained in Skill Safari. & This is my simple component library which can be used in web development </p>
   <hr>
     <h2>@typography</h2>
@@ -29,20 +29,22 @@
 
     <hr>
     <h2>@containers</h2>
-    <h3>Fluid container</h3>
-    <p>this is a fluid container which will take entire page width </p>
-    <h3>center container</h3>
-    <p>this is a center container which will be center aligned </p>
-    <hr>
+    <div class="container-fluid"> <h3>Fluid container</h3>
+      <p>this is a fluid container which will take entire page width </p></div>
+      <div class="container-center"><h2 >center container</h3>
+        <p>this is a center container which will be center aligned </p>
+        </div>
+        <hr>
+    
 <h2>@links</h2>
 <p>to connect different pages in website/redirect to other sites from your own site </p>
 <p>links can be shown as button or link </p>
 <p>we use anchor tag for links & anchor tag is a inline element </p>
 <h4>example of link</h4>
-<a href="#">primary link  </a>
+<a href="#" class="primary-link">primary link  </a>
 <div></div>
 <h4>this link will open in new tab</h4>
-<a href="https://www.google.co.in/?gws_rd=ssl" target="_blank">Secondary link new tab link</a>
+<a href="https://www.google.co.in/?gws_rd=ssl" target="_blank" class="secondary-link">Secondary link </a>
 <hr>
 <h2>Lists</h2>
 <p>there are 3 types of list unordered list, inline list, revers ordered list</p>
