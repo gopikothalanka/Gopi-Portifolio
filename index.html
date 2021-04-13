@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gopi - component library</title>
+  <!----favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io (1)/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io (1)/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io (1)/favicon-16x16.png">
+<!----/favicon-->
   <link rel="stylesheet" href="style.css">
   </head>
 <body>
@@ -36,19 +41,32 @@
         </div>
         <hr>
     
-<h2>@links</h2>
-<p>to connect different pages in website/redirect to other sites from your own site </p>
-<p>links can be shown as button or link </p>
-<p>we use anchor tag for links & anchor tag is a inline element </p>
-<h4>example of link</h4>
-<a href="#" class="primary-link">primary link</a>
-<h4>This link will open in new tab</h4>
-<a href="https://www.google.co.in/?gws_rd=ssl" target="_blank" class="secondary-link">Secondary link </a>
+<section class="section-1"><h2>@links</h2>
+  <p>to connect different pages in website/redirect to other sites from your own site </p>
+  <p>links can be shown as button or link </p>
+  <p>we use anchor tag for links & anchor tag is a inline element </p>
+  <h4>example of link</h4>
+  <a href="#" class="primary-link">primary link</a>
+  <h4>This link will open in new tab</h4>
+  <a href="https://www.google.co.in/?gws_rd=ssl" target="_blank" class="secondary-link">Secondary link </a>
+  </section>
 <hr>
 <h2>Lists</h2>
 <p>there are 3 types of list unordered list, inline list, revers ordered list</p>
 <h4>Un ordered list</h4>
 <ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+<h4>Un ordered list without bullets</h4>
+<ul class="list-unbulleted">
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+<h4>in line list</h4>
+<ul class="inline-list">
   <li>item 1</li>
   <li>item 2</li>
   <li>item 3</li>
@@ -65,37 +83,45 @@
   <li>item 2</li>
   <li>item 3</li>
 </ol>
+<!---/list-->
 <hr>
 <h2>@nav</h2>
 <nav class="navigation">
 <div class="container-fluid">
-<div class="brand-name">Gopi</div>
-<ul>
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Projects</a></li>
-  <li><a href="#">Blog</a></li>
-  <li><a href="#">Contact</a></li>
+<div class="nav-brand">Gopi</div>
+<ul class="nav-list">
+  <li><a href="#" class="link">Home</a></li>
+  <li><a href="#" class="link">Projects</a></li>
+  <li><a href="#" class="link">Blog</a></li>
+  <li><a href="#" class="link">Contact</a></li>
 </ul>
 </div>
 </nav>
 <hr>
-<h2>@Header</h2>
-<header>
-  <img src="./images/undraw_developer_activity_bv83.svg" alt="an header image"> 
+
+<header class="container hero">
+  <h2>@Header</h2>
+  <img src="./images/undraw_developer_activity_bv83.svg" alt="a  header image"> 
+  <img src="./images/undraw_profile_pic_ic5t.svg" alt="a profile image" class="profile">
+  <h1>I'm Gopi a full Stack web developer</h1>
 </header>
 <hr>
-<h2>@Sections</h2>
-<section>Section</section>
+<!--section-->
+
+<section class="section-2">
+  <h2>@Sections</h2>
+</section>
 <hr>
+<!---footer-->
 <h2>@footer</h2>
 <footer class="footer-nav">
   <div class="container-fluid">
-    <div>Heading inside footer</div>
+    <h2>Heading inside footer</h2>
     <ul>
-      <li><a href="#">facebook</a></li>
-      <li><a href="#">instagram</a></li>
-      <li><a href="#">linkedin</a></li>
-      <li><a href="#">GitHub</a></li>
+      <li><a href="#" class="link">facebook</a></li>
+      <li><a href="#" class="link">instagram</a></li>
+      <li><a href="#" class="link">linkedin</a></li>
+      <li><a href="#" class="link">GitHub</a></li>
     </ul>
 
   </div>

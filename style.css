@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-*{
+{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 :root {
   --black: #000000;
   --lite-gray: #C0C0C0;
@@ -12,9 +13,11 @@ box-sizing: border-box;
   --white: #FFFFFF;
 }
 /*body*/
+hr{margin: 0.5rem;}
 body{
   background-color:whitesmoke;
   font-family: 'Open Sans', sans-serif;
+  margin: 2rem;
   }
 /*body end*/
 .brand-name {
@@ -32,39 +35,102 @@ body{
   max-width: 600px;
   margin: auto;
  }
- 
+ /*links*/
+ .section-1{
+  margin: 2rem 2rem;
+}
  .primary-link{
-   
   color: #000000;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-radius: 0.6rem;
   padding: 00.5rem 1rem;
   text-decoration: none;
-  margin: 50% 1%;
+  font-weight: bold;
+  margin: 10% 1%;
  }
 
  .secondary-link{
+   background-color: gray;
+   text-decoration: none;
+   font-weight: bold;
    color: black;
-   border-radius: 15px;
-   border: 1px solid gray;
-   padding: 1% 1%;
-   margin: 2rem 2rem;
+   border-radius: 0.6rem;
+   border: 2px solid black;
+   padding: 0.5rem 1rem;
+   margin: 2% 1%;
  }
-
- hr{
-   margin: 2rem;
+ 
+ .link{
+   text-decoration: none;
+   font-weight: 500;
  }
+ /*/links*/
+/*lists*/
+  .list-unbulleted{
+   list-style: none;
+ }
+ .inline-list li{
+   display: inline;
+   padding: 0rem 0.5rem;
+ }
+ /*navigation*/
  .navigation {
-  background-color: var(--lite-gray);
+  background-color: #C0C0C0;
   padding: 1rem 0rem;
-  color: var(--black);
+  color: black;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  position: sticky;
+  position: relative;
+ }
+.navigation .nav-brand{
+  position: absolute;
+  font-weight: 800;
 }
-.footer-nav{background-color: var(--lite-gray);
+.navigation ul {
+  list-style: none;
+  text-align: right;
+  font-weight: bold;
+
+}
+.navigation ul li {
+  display: inline-flex;
+  padding: 0 1rem;
+  }
+  /*footer*/
+.footer-nav{background-color: #C0C0C0;
   padding: 1rem 0rem;
-  color: var(--black);
+  color: black;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  position: relative;}
+  position: relative;
+}
+.footer-nav ul {
+  text-align: center;
+  list-style: none;
+}
+.footer-nav ul li {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+.footer-nav h2 {
+ text-align: center;
+ padding: 0.5rem; 
+}
+/*header*/
+.hero img {
+  display: block;
+  max-width: 450px;
+  margin: auto;
+}
+.hero h1 { 
+  font-style: italic;
+  text-align: center;
+  color: lightslategray;
+
+}
+header .profile{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
